@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getLoading } from '../../redux/feedbacks/feedbacks-selectors';
 import * as operations from '../../redux/feedbacks/feedbacks-operations';
-
 import {
   MainContainer,
   FeedbackFormBlock,
@@ -98,28 +97,28 @@ export default function FeedbackForm() {
             <ul>
               <li>
                 <a href="https://www.linkedin.com">
-                  <svg width="12.87" height="12.95">
+                  <svg class="social-icon" width="12.87" height="12.95">
                     <use href={icons + '#icon-linkedin'}></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com">
-                  <svg width="16.09" height="12.87">
+                  <svg class="social-icon" width="16.09" height="12.87">
                     <use href={icons + '#icon-twitter'}></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="https://www.facebook.com">
-                  <svg width="8.36" height="16.09">
+                  <svg class="social-icon" width="8.36" height="16.09">
                     <use href={icons + '#icon-facebook'}></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="https://www.pinterest.com">
-                  <svg width="12.23" height="14.8">
+                  <svg class="social-icon" width="12.23" height="14.8">
                     <use href={icons + '#icon-pinterest'}></use>
                   </svg>
                 </a>

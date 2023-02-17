@@ -42,6 +42,7 @@ export const Title = styled.h1`
 export const Input = styled.input`
   width: 250px;
   height: 53px;
+  font-family: 'Apercu Arabic Pro';
   font-size: 18px;
   border: 1px solid #dcdcdc;
   border-radius: 10px;
@@ -64,6 +65,7 @@ export const Input = styled.input`
 export const Textarea = styled.textarea`
   width: 250px;
   height: 189px;
+  font-family: 'Apercu Arabic Pro';
   font-size: 18px;
   border: 1px solid #dcdcdc;
   border-radius: 10px;
@@ -106,12 +108,6 @@ export const Footer = styled.div`
   height: 200px;
   background: #fafafa;
   border: 1px solid #d8d8d8;
-  background-image: url(${cartoon4Src}), url(${cartoon1Src});
-  background-position: top right 103px, right -38px bottom 28px;
-  background-image: url(${cartoon3Src}), url(${cartoon4Src}),
-    url(${cartoon1Src});
-  background-repeat: no-repeat;
-  background-position: 15px -38px, top right 103px, right -38px bottom 28px;
   ul {
     display: flex;
     justify-content: center;
@@ -120,7 +116,23 @@ export const Footer = styled.div`
     li {
       margin-right: 26px;
     }
-    @media screen and (min-width: 480px) {
+  }
+  .social-icon {
+    fill: #696969;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: #3498db;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url(${cartoon3Src}), url(${cartoon4Src}),
+      url(${cartoon1Src});
+    background-repeat: no-repeat;
+    background-size: 214px 208px, 78px 97px, 88px 86px;
+    background-position: 15px -38px, top right 103px, right -38px bottom 28px;
+    ul {
       justify-content: left;
       margin-left: 343px;
     }
