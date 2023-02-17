@@ -8,7 +8,6 @@ import mapSrc from '../../images/Map.png';
 
 export const MainContainer = styled.div`
   min-width: 320px;
-  max-width: 1440px;
   position: relative;
   background-image: url(${cartoon1Src}), url(${cartoon2Src}),
     url(${cartoon3Src}), url(${mapSrc});
@@ -107,7 +106,6 @@ export const Button = styled.button`
 
 export const Footer = styled.div`
   min-width: 320px;
-  max-width: 1440px;
   height: 100px;
   background: #fafafa;
   border: 1px solid #d8d8d8;
