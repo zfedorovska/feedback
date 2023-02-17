@@ -64,7 +64,7 @@ export const Input = styled.input`
 
 export const Textarea = styled.textarea`
   width: 250px;
-  height: 189px;
+  height: 93px;
   font-family: 'Apercu Arabic Pro';
   font-size: 18px;
   border: 1px solid #dcdcdc;
@@ -82,7 +82,7 @@ export const Textarea = styled.textarea`
   }
   @media screen and (min-width: 480px) {
     width: 407px;
-    height: 93px;
+    height: 189px;
   }
   @media screen and (min-width: 720px) {
     width: 507px;
@@ -99,13 +99,16 @@ export const Button = styled.button`
   padding-top: 28px;
   padding-bottom: 28px;
   color: #ffffff;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 120px;
+  }
 `;
 
 export const Footer = styled.div`
   min-width: 320px;
   max-width: 1440px;
-  height: 200px;
+  height: 100px;
   background: #fafafa;
   border: 1px solid #d8d8d8;
   ul {
@@ -127,6 +130,7 @@ export const Footer = styled.div`
   }
 
   @media screen and (min-width: 480px) {
+    height: 200px;
     background-image: url(${cartoon3Src}), url(${cartoon4Src}),
       url(${cartoon1Src});
     background-repeat: no-repeat;
