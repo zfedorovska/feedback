@@ -15,6 +15,9 @@ export const MainContainer = styled.div`
   @media screen and (min-width: 480px) {
     background-image: url(${cartoon1Src}), url(${cartoon2Src}),
       url(${cartoon3Src}), url(${mapSrc});
+    background-position: 29px 23px, 763px 516px, 762px 558px, 814px -28px;
+  }
+  @media screen and (min-width: 1440px) {
     background-position: 29px 23px, right 550px top 516px, right 380px top 558px,
       right 0px top -28px;
   }
