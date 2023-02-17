@@ -97,28 +97,28 @@ export default function FeedbackForm() {
             <ul>
               <li>
                 <a href="https://www.linkedin.com">
-                  <svg class="social-icon" width="12.87" height="12.95">
+                  <svg className="social-icon" width="12.87" height="12.95">
                     <use href={icons + '#icon-linkedin'}></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com">
-                  <svg class="social-icon" width="16.09" height="12.87">
+                  <svg className="social-icon" width="16.09" height="12.87">
                     <use href={icons + '#icon-twitter'}></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="https://www.facebook.com">
-                  <svg class="social-icon" width="8.36" height="16.09">
+                  <svg className="social-icon" width="8.36" height="16.09">
                     <use href={icons + '#icon-facebook'}></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="https://www.pinterest.com">
-                  <svg class="social-icon" width="12.23" height="14.8">
+                  <svg className="social-icon" width="12.23" height="14.8">
                     <use href={icons + '#icon-pinterest'}></use>
                   </svg>
                 </a>
