@@ -9,10 +9,15 @@ import mapSrc from '../../images/Map.png';
 export const MainContainer = styled.div`
   min-width: 320px;
   position: relative;
-  background-image: url(${cartoon1Src}), url(${cartoon2Src}),
-    url(${cartoon3Src}), url(${mapSrc});
+  background-image: url(${cartoon1Src});
   background-repeat: no-repeat;
-  background-position: 29px 23px, 763px 516px, 762px 558px, 814px -28px;
+  background-position: 29px 23px;
+  @media screen and (min-width: 480px) {
+    background-image: url(${cartoon1Src}), url(${cartoon2Src}),
+      url(${cartoon3Src}), url(${mapSrc});
+    background-position: 29px 23px, right 550px top 516px, right 380px top 558px,
+      right 0px top -28px;
+  }
 `;
 
 export const FeedbackFormBlock = styled.div`
@@ -28,6 +33,9 @@ export const FeedbackFormBlock = styled.div`
     margin: 0;
     padding-top: 179px;
     padding-left: 130px;
+  }
+  @media screen and (min-width: 1920px) {
+    margin: 0 auto;
   } ;
 `;
 
